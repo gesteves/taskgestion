@@ -5,3 +5,132 @@ http://developer.yahoo.net/yui/license.txt
 version: 2.5.2
 */
 html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;font-variant:normal;}sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* COLORS
+
+Blue: #003082
+*/
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color:#333;
+}
+
+h1 {
+	width:150px;
+	height:288px;
+	background:#003082 url('/static/images/task-gestion-logo.png') top left no-repeat;
+	float:left;
+	text-indent:-10000px;
+	-webkit-border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-bottomleft:5px;
+	-webkit-box-shadow:0px 2px 5px #333;
+	-moz-box-shadow:0px 2px 5px #333;
+}
+
+header {
+	width:150px;
+	height:288px;
+	display:block;
+	position:fixed;
+	top:0;
+	left:30px;
+
+}
+
+h1 a {
+	width:150px;
+	height:288px;
+	display:block;
+}
+
+nav.main {
+	width:180px;
+	display:block;
+	position:fixed;
+	top:0;
+	left:195px;
+	z-index:10;
+	background:rgba(255,255,255,0.8);
+	-webkit-border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-bottomleft:5px;
+}
+
+nav.main ul {
+	font-size:12px;
+	line-height:2;
+	margin:2em 0;
+}
+
+nav.main a {
+	display:block;
+	padding:0 15px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-transition:color 0.25s linear;
+	-webkit-transition:background 0.25s linear;
+	font-weight:bold;
+}
+
+nav.main a:link, nav.main a:visited{
+	text-decoration:none;
+}
+
+nav.main a:hover, nav.main a:active{
+	text-decoration:none;
+	color:#fff;
+	background:#003082;
+}
+
+#content {
+	width:600px;
+	float:left;
+	margin-left:390px;
+}
+
+section {
+	display:block;
+	float:left;
+	width:600px;
+	margin-bottom:900px;
+}
+
+
+a {
+	color:#003082;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+}
+a:hover, a:active {
+	text-decoration:underline;
+}
+
+footer {
+	width:100%;
+	height:100px;
+	position:fixed;
+	display:block;
+	bottom:0;
+	left:0;
+	background:-webkit-gradient(linear, left top, left 76, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+}
+
+footer p {
+	position:fixed;
+	left:30px;
+	bottom:0;
+	font-size:12px;
+	line-height:2em;
+	background:#fff;
+}
+
+h2 {
+	margin-left:-60px;
+}
+
