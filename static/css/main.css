@@ -16,13 +16,8 @@ Blue: #003082
    src: url("/static/fonts/Chunkfive.otf") format("opentype");
 }
 
-@font-face {
-   font-family: Calluna;
-   src: url("/static/fonts/Calluna-Regular.otf") format("opentype");
-}
-
 body {
-	font-family: Calluna, Georgia, "Times New Roman", Times, serif;
+	font-family: Baskerville, Constantia, Georgia, "Times New Roman", Times, serif;
 	color:#333;
 }
 
@@ -72,9 +67,9 @@ nav.main {
 }
 
 nav.main ul {
-	font-size:12px;
-	line-height:2;
-	margin:2em 0;
+	font-size:16px;
+	line-height:1.5;
+	margin:1.5em 0;
 }
 
 nav.main a {
