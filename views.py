@@ -8,9 +8,18 @@ from google.appengine.api import mail
 from google.appengine.api import memcache
 
 def index(request):
-	response = render_to_response('index.html')
+	response = memcache.get("index")
+	if response is None:
+		response = render_to_response('index.html')
+		memcache.add("index", response, 3600)
 	return response
-	
+
+def flush_cache(request):
+	flush = memcache.flush_all()
+	if flush:
+		return HttpResponse("Cache has been flushed", mimetype="text/plain")
+	else:
+		return HttpResponse("Cache has not been flushed", mimetype="text/plain")	
 	
 def not_found(request):
 	t = get_template('index.html')

@@ -17,5 +17,6 @@ urlpatterns = patterns('',
     # (r'^admin/(.*)', admin.site.root),
 	(r'^$', index),
 	(r'^contact', contact),
+	(r'^flush', flush_cache),
 	(r'', not_found),
 )
