@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django import http
 from django.http import HttpResponse
@@ -33,13 +34,13 @@ def contact(request):
 		else:
 			message = mail.EmailMessage()
 			message.sender = "contacto@taskgestion.com"
-			message.to = "g@gesteves.com"
+			message.to = "westeves@taskgestion.com, lhernandez@taskgestion.com"
 			message.reply_to = email
-			message.subject = "%s ha escrito en el formulario de contacto" % (name)
+			message.subject = "%s, desde el formulario de contacto de Task" % (name)
 			message.body="""
 Nombre y Apellido: %s
-Correo Electr&oacute;nico: %s
-Tel&eacute;fono: %s
+Email: %s
+Teléfono: %s
 
 %s			
 """ % (name, email, phone, body)

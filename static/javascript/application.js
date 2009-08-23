@@ -43,7 +43,7 @@ function sendEmail(event) {
 	$('#send').attr("disabled", "disabled");
 	var name = $(':text[name=name]').val();
 	var email = $(':text[name=email]').val();
-	var subject = $(':text[name=phone]').val();
+	var phone = $(':text[name=phone]').val();
 	var message = $(':input[name=message]').val();
 	$.post("/contact/", {name: name, email: email, phone: phone, message: message}, function(data) {
 		if (data == "Invalid email") {
@@ -60,7 +60,7 @@ function sendEmail(event) {
 			$('#send').attr("value", send);
 		} else if (data == "OK") {
 			$('#send').attr("value", sent);
-			$('p.contact-error').empty();
+			$('span.contact-error').empty();
 		}
 	});
 }
