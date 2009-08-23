@@ -235,9 +235,9 @@ address {
 }
 
 #contacto a.hcard {
-	width:208px;
+	width:201px;
 	float:left;
-	padding-left:32px;
+	padding-left:39px;
 	background:url('/static/images/vcard-add.png') center left no-repeat;
 }
 
