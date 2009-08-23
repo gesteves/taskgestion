@@ -18,7 +18,7 @@ Blue: #003082
 
 body {
 	font-family: Baskerville, Constantia, Georgia, "Times New Roman", Times, serif;
-	color:#333;
+	color:#222;
 }
 
 h1 {
@@ -93,7 +93,7 @@ nav.main a:hover, nav.main a:active{
 	text-decoration:none;
 	color:#fff;
 	background:#003082;
-	text-shadow:0 1px 2px #000;
+	text-shadow:0 1px 1px #000;
 }
 
 #content {
@@ -102,7 +102,7 @@ nav.main a:hover, nav.main a:active{
 	margin-left:390px;
 }
 
-p {
+p, ul {
 	font-size:16px;
 	line-height:1.5;
 	margin:1.5em 0;
@@ -111,17 +111,56 @@ p {
 h2 {
 	font-family:Chunk;
 	font-size:48px;
-	line-height:1;
+	line-height:0.5;
 	margin:0.5em 0;
+	text-shadow:1px 1px 1px #000;
+	width:600px;
+}
+
+h3 {
+	font-size:24px;
+	line-height:1;
+	margin:1em 0;
+	border-bottom:1px solid #ccc;
+	clear:both;
+}
+
+h4 {
+	font-size:16px;
+	line-height:1.5;
+	margin:0;
+	border-bottom:1px solid #ccc;
 }
 
 section {
 	display:block;
 	float:left;
 	width:600px;
-	margin-bottom:900px;
+	margin-bottom:96px;
 }
 
+blockquote {
+	clear:both;
+}
+
+blockquote p {
+	font-size:32px;
+	font-style:italic;
+	line-height:0.75;
+	margin:0.75em 0;
+	text-indent:-30px;
+	color:#000;
+}
+
+span.amp, cite {
+	font-style:italic;
+}
+
+abbr {
+	letter-spacing:0.1em;
+	font-variant:small-caps;
+	text-transform:lowercase;
+}
 
 a {
 	color:#003082;
@@ -132,6 +171,46 @@ a:link, a:visited {
 }
 a:hover, a:active {
 	text-decoration:underline;
+}
+#content ul {
+	margin-left:1em;
+}
+#content ul li {
+	list-style-type:disc;
+}
+
+#capacidades div {
+	width:225px;
+	margin-left:15px;
+	padding:0 15px;
+	float:right;
+	background:rgba(204, 204, 204, 0.5);
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
+#capacidades div ul {
+	margin-top:0;
+	margin-bottom:0;
+}
+
+#servicios div {
+	width:285px;
+	float:left;
+}
+#servicios div.left {
+	margin-right:15px;
+}
+#servicios div.right {
+	margin-left:15px;
+}
+
+#socios ul li ul {
+	margin:0;
+}
+#socios ul li ul li {
+	padding-left:1em;
+	list-style-type:none;
 }
 
 footer {
