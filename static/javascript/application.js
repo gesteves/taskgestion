@@ -5,7 +5,6 @@ $(document).ready(function() {
 
 function initjQuery() {
 	if ((location.hash != "") && $(location.hash)) {
-		switchContent($(location.hash));
 		$('#main-nav a').removeClass('selected');
 		$('#main-nav a[href="'+location.hash+'"]').addClass('selected'); 	
 	}
