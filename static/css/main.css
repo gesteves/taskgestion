@@ -102,7 +102,7 @@ nav.main a:hover, nav.main a:active{
 	margin-left:390px;
 }
 
-p, ul {
+p, ul, address {
 	font-size:16px;
 	line-height:1.5;
 	margin:1.5em 0;
@@ -216,6 +216,39 @@ a:hover, a:active {
 
 #contacto {
 	margin-bottom:1000px;
+}
+
+address {
+	float:left;
+	margin-right:30px;
+	width:330px;
+}
+
+#contacto h4 {
+	font-weight:bold;
+	margin-bottom:0;
+}
+
+#contacto ul li abbr {
+	font-variant:normal;
+	text-transform:none;
+}
+
+#contacto a.hcard {
+	width:208px;
+	float:left;
+	padding-left:32px;
+	background:url('/static/images/vcard-add.png') center left no-repeat;
+}
+
+#contacto ul {
+	width:240px;
+	margin-left:0;
+	float:left;
+}
+
+#contacto ul li {
+	list-style-type:none;
 }
 
 footer {
