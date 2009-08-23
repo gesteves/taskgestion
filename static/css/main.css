@@ -11,8 +11,18 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 Blue: #003082
 */
 
+@font-face {
+   font-family: Chunk;
+   src: url("/static/fonts/Chunkfive.otf") format("opentype");
+}
+
+@font-face {
+   font-family: Calluna;
+   src: url("/static/fonts/Calluna-Regular.otf") format("opentype");
+}
+
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Calluna, Georgia, "Times New Roman", Times, serif;
 	color:#333;
 }
 
@@ -47,6 +57,7 @@ h1 a {
 }
 
 nav.main {
+	font-family:Chunk;
 	width:180px;
 	display:block;
 	position:fixed;
@@ -73,7 +84,10 @@ nav.main a {
 	-moz-border-radius:5px;
 	-webkit-transition:color 0.25s linear;
 	-webkit-transition:background 0.25s linear;
-	font-weight:bold;
+}
+
+nav.main a.selected {
+	background:rgba(204, 204, 204, 0.5);
 }
 
 nav.main a:link, nav.main a:visited{
@@ -84,7 +98,7 @@ nav.main a:hover, nav.main a:active{
 	text-decoration:none;
 	color:#fff;
 	background:#003082;
-	text-shadow:0 2px 2px #000;
+	text-shadow:0 1px 2px #000;
 }
 
 #content {
@@ -97,6 +111,13 @@ p {
 	font-size:16px;
 	line-height:1.5;
 	margin:1.5em 0;
+}
+
+h2 {
+	font-family:Chunk;
+	font-size:48px;
+	line-height:1;
+	margin:0.5em 0;
 }
 
 section {
@@ -136,9 +157,5 @@ footer p {
 	font-size:12px;
 	line-height:1;
 	margin:1em 0;
-}
-
-h2 {
-	margin-left:-60px;
 }
 
