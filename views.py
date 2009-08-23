@@ -7,3 +7,9 @@ from django.template import Context
 def index(request):
 	response = render_to_response('index.html')
 	return response
+	
+	
+def not_found(request):
+	t = get_template('index.html')
+	html = t.render(Context())
+	return http.HttpResponseNotFound(html)
