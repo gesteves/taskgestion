@@ -109,7 +109,8 @@ p, ul {
 }
 
 h2 {
-	font-family:Chunk;
+	font-family:Chunk, "Times New Roman";
+	font-weight:bold;
 	font-size:48px;
 	line-height:0.5;
 	margin:0.5em 0;
