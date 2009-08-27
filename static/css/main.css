@@ -33,7 +33,7 @@ h1 {
 	-moz-border-radius-bottomleft:5px;
 	-webkit-box-shadow:0px 2px 5px #333;
 	-moz-box-shadow:0px 2px 5px #333;
-	-webkit-transition: -webkit-transform 0.1s ease-in;
+	-webkit-transition: -webkit-transform 0.1s linear;
 }
 
 h1:hover {
@@ -84,7 +84,7 @@ nav.main a {
 	-moz-border-radius:5px;
 	-webkit-transition-property: color, background, -webkit-transform;
 	-webkit-transition-duration: 0.25s;
-	-webkit-transition-timing-function: linear, linear, ease-in;
+	-webkit-transition-timing-function: linear, linear, linear;
 }
 
 nav.main a.selected {
@@ -149,6 +149,11 @@ section {
 
 blockquote {
 	clear:both;
+	-webkit-transition:-webkit-transform 0.25s linear;
+}
+
+blockquote:hover {
+	-webkit-transform:scale(1.25);
 }
 
 blockquote p {
