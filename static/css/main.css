@@ -149,7 +149,8 @@ section {
 
 blockquote {
 	clear:both;
-	-webkit-transition:-webkit-transform 0.25s linear;
+	-webkit-transition:-webkit-transform 0.1s linear;
+	-webkit-transform-origin:top left;
 }
 
 blockquote:hover {
