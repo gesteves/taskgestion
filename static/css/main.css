@@ -290,6 +290,13 @@ address {
 	margin:0;
 }
 
+#contacto input[type=text], #contacto textarea {
+	background:-webkit-gradient(linear, left top, left 5, from(rgba(200,200,200,1)), to(rgba(230,230,230,1)));
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border:none;
+}
+
 #contacto p.submit {
 	clear:both;
 }
