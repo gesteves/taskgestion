@@ -34,13 +34,12 @@ function changeHash(hash) {
 
 function sendEmail(event) {
 	event.preventDefault();
-	$('#send').attr("value", "Enviando…");
+	$('#send').text("Enviando…");
 	var bademail = "Por favor, escriba una dirección de email válida.";
 	var badname = "Por favor, escriba su nombre.";
 	var badmessage = "Por favor, escriba su mensaje.";
 	var sent = "¡Mensaje enviado!";
 	var send = "Enviar mensaje";
-	$('#send').attr("disabled", "disabled");
 	var name = $(':text[name=name]').val();
 	var email = $(':text[name=email]').val();
 	var phone = $(':text[name=phone]').val();
@@ -48,19 +47,16 @@ function sendEmail(event) {
 	$.post("/contact/", {name: name, email: email, phone: phone, message: message}, function(data) {
 		if (data == "Invalid email") {
 			$('span.contact-error').html(bademail);
-			$('#send').removeAttr("disabled");
-			$('#send').attr("value", send);
+			$('#send').text(send);
 		} else if (data == "Invalid name") {
 			$('span.contact-error').html(badname);
-			$('#send').removeAttr("disabled");
-			$('#send').attr("value", send);
+			$('#send').text(send);
 		} else if (data == "Invalid message") {
 			$('span.contact-error').html(badmessage);
-			$('#send').removeAttr("disabled");
-			$('#send').attr("value", send);
+			$('#send').text(send);
 		} else if (data == "OK") {
-			$('#send').attr("value", sent);
-			$('span.contact-error').empty();
+			$('#send').text(send);
+			$('span.contact-error').html(sent);
 		}
 	});
 }
