@@ -33,11 +33,13 @@ h1 {
 	-moz-border-radius-bottomleft:5px;
 	-webkit-box-shadow:0px 2px 5px #333;
 	-moz-box-shadow:0px 2px 5px #333;
-	-webkit-transition: -webkit-transform 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
 }
 
 h1:hover {
 	-webkit-transform:scale(1.05);
+	-moz-transform:scale(1.05);
 }
 
 header {
@@ -89,6 +91,9 @@ nav.main a {
 	-webkit-transition-property: color, background, -webkit-transform;
 	-webkit-transition-duration: 0.25s;
 	-webkit-transition-timing-function: linear, linear, linear;
+	-moz-transition-property: color, background, -webkit-transform;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: linear, linear, linear;
 }
 
 nav.main a.selected {
@@ -106,6 +111,7 @@ nav.main a:hover, nav.main a:active{
 	background:#003082;
 	text-shadow:0 1px 1px #000;
 	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
 }
 
 #content {
@@ -154,11 +160,13 @@ section {
 
 blockquote {
 	clear:both;
-	-webkit-transition:-webkit-transform 0.1s linear;
+	-webkit-transition:all 0.1s linear;
+	-moz-transition:all 0.1s linear;
 }
 
 blockquote:hover {
 	-webkit-transform:scale(1.25);
+	-moz-transform:scale(1.25);
 }
 
 blockquote p {
@@ -300,6 +308,7 @@ address {
 #contacto input[type=text], #contacto textarea {
 	background:#e3e3e3;
 	background:-webkit-gradient(linear, left top, left 5, from(rgba(200,200,200,1)), to(rgba(230,230,230,1)));
+	background:-moz-gradient(linear, left top, left 5, from(rgba(200,200,200,1)), to(rgba(230,230,230,1)));
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -319,6 +328,7 @@ footer {
 	left:0;
 	background:#fff;
 	background:-webkit-gradient(linear, left top, left 50%, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+	background:-moz-gradient(linear, left top, left 50%, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
 }
 
 footer p {
