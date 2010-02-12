@@ -23,7 +23,8 @@ function getContent(event) {
 
 function switchContent(section) {
 	$.scrollTo(section, {duration: 500, onAfter:function() {changeHash(section.attr('id'));}});
-	pageTracker._trackEvent('Section', 'View', $("#main-nav a[href='#"+section.attr('id')+"']").text());
+	var label = $("#main-nav a[href='#"+section.attr('id')+"']").text();
+	_gaq.push(['_trackEvent','Section', 'View', label]);
 }
 
 
