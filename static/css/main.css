@@ -12,8 +12,13 @@ Blue: #003082
 */
 
 @font-face {
-   font-family: Chunk;
-   src: url("/static/fonts/Chunkfive.otf") format("opentype");
+	font-family: 'ChunkFiveRegular';
+	src: url('/static/fonts/chunkfive.eot');
+}
+
+@font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url(//:) format('no404'), url('/static/fonts/chunkfive.woff') format('woff'), url('/static/fonts/chunkfive.otf') format('opentype'), url('/static/fonts/chunkfive.svg#ChunkFive') format('svg');
 }
 
 body {
@@ -64,7 +69,7 @@ h1 a {
 }
 
 nav.main {
-	font-family:Chunk;
+	font-family:ChunkFiveRegular;
 	width:180px;
 	display:block;
 	position:fixed;
@@ -136,7 +141,7 @@ p, ul, address {
 }
 
 h2 {
-	font-family:Chunk, "Times New Roman";
+	font-family:ChunkFiveRegular, "Times New Roman";
 	font-weight:bold;
 	font-size:48px;
 	line-height:0.5;
