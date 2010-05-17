@@ -204,6 +204,12 @@ abbr {
 	text-transform:lowercase;
 }
 
+h2 abbr, #main-nav abbr {
+	letter-spacing:normal;
+	font-variant:normal;
+	text-transform:none;
+}
+
 a {
 	color:#003082;
 }
@@ -236,6 +242,23 @@ a:hover, a:active {
 #capacidades div ul {
 	margin-top:0;
 	margin-bottom:0;
+}
+
+#bnc a.bnc {
+	width:300px;
+	height:144px;
+	margin-left:20px;
+	margin-bottom:22px;
+	display:block;
+	float:right;
+}
+
+#bnc a.bnc:link, #bnc a.bnc:visited {
+	border-bottom:2px solid #fff;
+}
+
+#bnc a.bnc:hover, #bnc a.bnc:active {
+	border-bottom:2px solid #003082;	
 }
 
 #servicios div {
