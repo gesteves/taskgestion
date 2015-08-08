@@ -1,0 +1,27 @@
+// Swatches
+$color-blue: #003082;
+
+// Colors
+$color-border: #ccc;
+$color-header: $color-blue;
+$color-nav-selected: rgba(204, 204, 204, .5);
+$color-nav: rgba(255, 255, 255, .8);
+$color-text: #222;
+
+// Placeholders
+
+%links {
+  a {
+    color: $color-blue;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration:none;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration:underline;
+  }
+}

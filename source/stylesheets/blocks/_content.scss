@@ -1,0 +1,83 @@
+.content {
+  @extend %links;
+  float: left;
+  margin-left: 390px;
+  width: 600px;
+}
+
+.content__section {
+  display: block;
+  margin-bottom: 96px;
+  width: 600px;
+
+  h2 {
+    font-family: 'chunk';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 1rem 0;
+  }
+
+  h3 {
+    border-bottom: 1px solid $color-border;
+    font-size: 24px;
+    line-height: 1;
+    margin: 1rem 0;
+  }
+
+  h4 {
+    border-bottom: 1px solid $color-border;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  p,
+  ol,
+  ul,
+  dl,
+  address {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+  }
+
+  ul {
+    margin: 0 1rem;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ul ul {
+    margin: 0 1rem;
+  }
+
+  blockquote p {
+    font-size: 32px;
+    font-style: italic;
+    line-height: 1;
+    margin: 1rem -50px;
+    text-align: center;
+  }
+
+  cite {
+    font-style: italic;
+  }
+
+
+}
+
+.content__aside {
+  background: rgba(204, 204, 204, 0.5);
+  border-radius: 5px;
+  float: right;
+  margin-left: 15px;
+  padding: 0.5rem 1rem;
+  width: 225px;
+
+  ul {
+    margin: 0.5rem 1rem;
+  }
+}

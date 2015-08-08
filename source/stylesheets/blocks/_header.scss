@@ -1,0 +1,34 @@
+.header {
+  display: block;
+  height: 288px;
+  left: 30px;
+  position: fixed;
+  top: 0;
+  width: 150px;
+}
+
+.header__logo {
+  background: $color-header url('../images/task-gestion-logo.png') top left no-repeat;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  float: left;
+  height: 288px;
+  text-indent: -10000px;
+  transition: all 0.1s ease-in-out;
+  width: 150px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('../images/task-gestion-logo@2x.png');
+    background-size: 150px 288px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.header__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

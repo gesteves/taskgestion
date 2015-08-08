@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.contact__address {
+  padding-right: 1rem;
+}
+
+.contact__list {
+  padding-left: 1rem;
+}
+
+.contact__type {
+  clear: left;
+  color: #999;
+  float: left;
+  width: 5rem;
+}
+
+.contact__value {
+  float: left;
+}

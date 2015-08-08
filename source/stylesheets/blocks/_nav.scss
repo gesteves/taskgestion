@@ -1,0 +1,45 @@
+.nav {
+  background: $color-nav;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: block;
+  font-family: 'chunk';
+  left: 195px;
+  position: fixed;
+  top: 0;
+  width: 180px;
+  z-index: 1;
+}
+
+.nav__list {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+.nav__item {
+  border-radius: 5px;
+  display: block;
+  padding: 0 15px;
+  transition-duration: 0.25s;
+  transition-property: color, background, transform;
+  transition-timing-function: ease-in-out;
+
+  &--selected {
+    background: $color-nav-selected;
+  }
+
+  &:link,
+  &:visited {
+    color: $color-blue;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    background: $color-blue;
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+  }
+}
