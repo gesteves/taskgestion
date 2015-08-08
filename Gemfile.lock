@@ -8,6 +8,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     ansi (1.5.0)
+    autoprefixer-rails (5.2.1.1)
+      execjs
+      json
     builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -79,6 +82,9 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-autoprefixer (2.5.0)
+      autoprefixer-rails (~> 5.2.0)
+      middleman-core (>= 3.3.3)
     middleman-core (3.3.12)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -165,6 +171,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   middleman (~> 3.3.12)
+  middleman-autoprefixer
   middleman-dotenv
   middleman-minify-html
   middleman-s3_sync
